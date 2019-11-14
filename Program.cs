@@ -16,9 +16,7 @@ namespace PasswordGenerator
          //password length
          int length = 8;
 
-         //srand(time(0));
          Random rnd = new Random((int)DateTime.Now.Ticks);
-
          for (int i = 0; i < length; i++)
          {
             Console.Write(_alphanum[rnd.Next() % _size]);
